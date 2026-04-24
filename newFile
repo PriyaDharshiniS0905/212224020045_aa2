@@ -1,5 +1,5 @@
 ## 
-## AIM 
+## Aim
 #
 To print numbers from 1 to 100 excluding multiples of 3 and numbers containing digit 5.
 ---
@@ -12,7 +12,7 @@ To print numbers from 1 to 100 excluding multiples of 3 and numbers containing d
 5.**Print remaining numbers**
 6.**Stop**
 ---
-## PROGRAM 
+## Program
 ```
 #include <stdio.h>
 
@@ -37,7 +37,7 @@ int main() {
 
     return 0;
 }
-~~~
+```
 ## OUTPUT
 
 ## RESULT 
