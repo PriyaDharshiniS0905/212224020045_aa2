@@ -4,18 +4,19 @@
 
 To print numbers from 1 to 100 excluding multiples of 3 and numbers containing digit 5.
 
----
-
 ## ALGORITHM 
 
-1.**Start**
-2.**Loop from 1 to 100**
-3.**If divisible by 3 → continue**
-4.**If number contains digit 5 → continue**
-5.**Print remaining numbers**
-6.**Stop**
+1.Start
 
----
+2.Loop from 1 to 100
+
+3.If divisible by 3 → continue
+
+4.If number contains digit 5 → continue
+
+5.Print remaining numbers
+
+6.Stop
 
 ## PROGRAM
 ~~~
@@ -45,6 +46,7 @@ int main() {
 ~~~
 
 ## OUTPUT
+<img width="808" height="252" alt="image" src="https://github.com/user-attachments/assets/d3c4b713-45e8-43ca-93c1-739d946b5580" />
 
 ## RESULT
 Thus the program has been executed successfully.
