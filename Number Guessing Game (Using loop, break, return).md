@@ -1,4 +1,5 @@
 ## Write a C program for a number guessing game where the loop continues for wrong guesses, breaks on a correct guess, and exits the program using return if the user enters -1.
+
 ## Aim
 To implement a guessing game using loop, break, and return.
 
@@ -40,10 +41,11 @@ int main() {
             printf("Wrong guess. Try again.\n");
         }
     }
+    return 0;
+}
 ~~~
 ## Output
+<img width="814" height="402" alt="image" src="https://github.com/user-attachments/assets/7f98b996-6ba4-43d2-81ce-c0a3c5581cf6" />
 
 ## Result
 Thus the program has been executed successfully.
-    return 0;
-}
