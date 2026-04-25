@@ -4,15 +4,21 @@
 To print numbers from 1 to 100 excluding multiples of 3 and numbers containing digit 5.
 
 ## Algorithm
-1.Start~
+1.Start
+
 2.Loop from 1 to 100
+
 3.If divisible by 3 → continue
+
 4.If number contains digit 5 → continue
+
 5.Print remaining numbers
+
 6.Stop
+
  ## Program 
  ~~~
- #include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int i, temp;
@@ -32,10 +38,11 @@ int main() {
 
         printf("%d ", i);
     }
+     return 0;
+}
 ~~~
 ## Output
+<img width="815" height="257" alt="image" src="https://github.com/user-attachments/assets/ecac3a3a-75ec-480d-8679-a5f68a161a4f" />
 
 ## Result
 Thus the program has been executed successfully.
-    return 0;
-}
