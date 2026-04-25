@@ -1,44 +1,51 @@
 # #  Write a C program to traverse a 2D matrix and print the values until a negative number is found. Use break statement.
 
 ## AIM 
-
-To print numbers from 1 to 100 excluding multiples of 3 and numbers containing digit 5.
+To traverse a 2D matrix element-by-element and terminate all processing immediately upon encountering a negative value using the break statement.
 
 ## ALGORITHM 
 
-1.Start
+1.Initialize a 2x2 matrix and a "stop" flag to 0.
 
-2.Loop from 1 to 100
+2. Start the outer loop to iterate through each row.
+  
+3. Start the inner loop to iterate through each column.
 
-3.If divisible by 3 → continue
+4. Check if the current element is negative.
+   
+5. Break the inner loop and set the flag to 1 if a negative is found.
 
-4.If number contains digit 5 → continue
+6. Check the flag in the outer loop and break immediately if it is 1.
 
-5.Print remaining numbers
-
-6.Stop
+7. Print the current element if no negative has been encountered yet.
 
 ## PROGRAM
 ~~~
 #include <stdio.h>
 
 int main() {
-    int i, temp;
+    int matrix[2][2] = {
+        {1, 2},
+        {-3, 4}
+    };
 
-    for(i = 1; i <= 100; i++) {
-        if(i % 3 == 0)
-            continue;
+    int foundNegative = 0;
 
-        temp = i;
-        while(temp > 0) {
-            if(temp % 10 == 5)
-                break;
-            temp /= 10;
+    printf("Scanning 2x2 Matrix:\n");
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            if (matrix[i][j] < 0) {
+                foundNegative = 1;
+                break; // Breaks the column loop
+            }
+            printf("Value at [%d][%d]: %d\n", i, j, matrix[i][j]);
         }
-        if(temp > 0)
-            continue;
 
-        printf("%d ", i);
+        if (foundNegative) {
+            printf("Negative value found! Stopping traversal.\n");
+            break; // Breaks the row loop
+        }
     }
 
     return 0;
@@ -46,7 +53,7 @@ int main() {
 ~~~
 
 ## OUTPUT
-<img width="808" height="252" alt="image" src="https://github.com/user-attachments/assets/d3c4b713-45e8-43ca-93c1-739d946b5580" />
+<img width="809" height="271" alt="image" src="https://github.com/user-attachments/assets/a56dffdf-5f06-44e9-a667-7ffc9908bf13" />
 
 ## RESULT
 Thus the program has been executed successfully.
