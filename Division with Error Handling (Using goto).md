@@ -2,14 +2,22 @@
 
 ## Aim
 To perform division and handle division by zero using goto.
+
 ## Algorithm
 1.Start
+
 2.Input two numbers
+
 3.If denominator = 0 → go to error
+
 4.Perform division
+
 5.Display result
+
 6.Error label → ask re-entry
+
 7.Stop
+
 ## Program
 ~~~
 #include <stdio.h>
@@ -34,6 +42,7 @@ start:
 
 ~~~
 ## OUTPUT
+<img width="809" height="224" alt="image" src="https://github.com/user-attachments/assets/fcfea413-2ef6-4534-b40f-f7900cf33259" />
 
 ## RESULT 
 Thus, the program has been executed successfully .
